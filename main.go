@@ -1,5 +1,9 @@
 package main
 
-func Hi() string {
-	return "Hi"
+import (
+    "fmt"
+)
+func main() {
+   fmt.Println("Hi!")
 }
+
