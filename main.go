@@ -1,11 +1,9 @@
 package main
 
-import (
-    "fmt"
-)
+# import (
+  #  "fmt"
+ # )
 func Hi(){
-    fmt.Println("Hi")
+    return "Hi"
 }
-func main() {
-   Hi()
-}
+
