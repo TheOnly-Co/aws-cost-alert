@@ -3,7 +3,9 @@ package main
 import (
     "fmt"
 )
-func main() {
-   fmt.Println("Hi!")
+func Hi(){
+    fmt.Println("Hi")
 }
-
+func main() {
+   Hi()
+}
