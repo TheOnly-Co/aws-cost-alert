@@ -3,7 +3,7 @@ package main
 // import (
   //  "fmt"
  //)
-func Hi(){
+func Hi() string {
     return "Hi"
 }
 
