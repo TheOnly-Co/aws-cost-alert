@@ -1,8 +1,10 @@
 package main
+/*
+ import (
+    "fmt"
+ )
+*/
 
-// import (
-  //  "fmt"
- //)
 func Hi() string {
     return "Hi"
 }
