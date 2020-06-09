@@ -1,7 +1,6 @@
 package main
 
-//import "fmt"
-
+//Hi return Hi
 func Hi() string {
     return "Hi"
 }
