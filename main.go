@@ -1,7 +1,3 @@
-/*
-Package will print out greeting
-
-*/
 package main
 
 //import "fmt"
