@@ -1,6 +1,6 @@
 package main
 
-//Hi return Hi
+//Hi return Hi.
 func Hi() string {
 	return "Hi"
 }
