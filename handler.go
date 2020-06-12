@@ -10,7 +10,7 @@ import (
 func handler(ctx context.Context) (string, error) {
 	cost, err := getCost()
 	if err != nil {
-		return "", err
+		return err
 	}
 	if os.Getenv("PHONENUMBER") == "" {
 		return "", fmt.Errorf("Please specify env variable PHONENUMBER including the country code")
