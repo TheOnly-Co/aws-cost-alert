@@ -19,7 +19,7 @@ func handler(ctx context.Context) (string, error) {
 		message:     fmt.Sprintf("The aws cost so far for today is $%s", cost),
 		phoneNumber: os.Getenv("PHONENUMBER"),
 	})
-	return "v1", err 
+	return "v1", err
 }
 
 func main() {
