@@ -9,9 +9,6 @@ import (
 
 func handler(ctx context.Context) (string, error) {
 	cost, err := getCost()
-    if err == error {
-        err = nil
-    }
 	if err != nil {
 		return "", err
 	}
