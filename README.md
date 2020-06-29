@@ -5,6 +5,9 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TheOnly-Co/aws-cost-alert/master/LICENSE)
 
 
-## Introduction
-aws sns alert when reaching threshold limit.
+## Introduction/Functions
+  - AWS Simple Notification Service (SNS)
+    - Use lambda functions to perform cost-alert.
+    - Attach policies and roles.
+    - Monitoring using CloudWatch metrics.
 
