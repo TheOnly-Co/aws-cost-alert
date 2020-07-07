@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/aws/aws-lambda-go/lambda"
 	"os"
+    "strings"
 )
 
 func handler(ctx context.Context) (string, error) {
@@ -12,9 +13,12 @@ func handler(ctx context.Context) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	if os.Getenv("PHONENUMBER") == "" {
-		return "", fmt.Errorf("Please specify env variable PHONENUMBER including the country code")
-	}
+    phoneNumberArray := strings.Split(os.Getenv("PHONENUMBER"), ",")
+    for _, i := range phoneNumberArray {
+	    if i == "" {
+		    return "", fmt.Errorf("Please specify env variable PHONENUMBER including the country code")
+	    }
+    }
 	err = sendSms(&sendSmsInput{
 		message:     fmt.Sprintf("The aws cost so far for today is $%s", cost),
 		phoneNumber: os.Getenv("PHONENUMBER"),
