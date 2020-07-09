@@ -1,7 +1,7 @@
 package main
 
 import (
-    "strings"
+  "strings"
 	"context"
 	"fmt"
 	"github.com/aws/aws-lambda-go/lambda"
