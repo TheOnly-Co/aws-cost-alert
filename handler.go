@@ -15,10 +15,10 @@ func handler(ctx context.Context) (string, error) {
             return "", err
         }
     phoneNumberArray := strings.Split(os.Getenv("PHONENUMBER"), ",")
-        for _, i := range phoneNumberArray {
-            if i == "" {
-                return "", fmt.Errorf("Please specify env variable PHONENUMBER including the country code")
-            }
+    for _, i := range phoneNumberArray {
+        if i == "" {
+            return "", fmt.Errorf("Please specify env variable PHONENUMBER including the country code")
+        }
      
         err = sendSms(&sendSmsInput{
              message:     fmt.Sprintf("The aws cost so far for today is $%s", cost),
