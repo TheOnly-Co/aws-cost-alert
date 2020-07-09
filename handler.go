@@ -1,12 +1,13 @@
 package main
 
 import (
+    "strings"
 	"context"
 	"fmt"
 	"github.com/aws/aws-lambda-go/lambda"
 	"os"
-    "strings"
 )
+
 
 func handler(ctx context.Context) (string, error) {
 	cost, err := getCost()
