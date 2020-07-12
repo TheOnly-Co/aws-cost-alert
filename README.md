@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TheOnly-Co/aws-cost-alert/master/LICENSE)
 
 
-## Introduction/Functions
+## Introduction & Functions
   - AWS Simple Notification Service (SNS)
     - Use lambda functions to perform cost-alert.
     - Attach policies and roles.
