@@ -7,7 +7,7 @@
 
 ## Introduction & Functions
   - AWS Simple Notification Service (SNS)
-    - Use lambda functions to perform cost-alert.
-    - Attach policies and roles.
-    - Monitoring using CloudWatch metrics.
+    - Use lambda functions to perform cost-alert
+    - Attach policies and roles
+    - Monitoring using CloudWatch metrics
 
