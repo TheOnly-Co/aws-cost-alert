@@ -5,9 +5,13 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TheOnly-Co/aws-cost-alert/master/LICENSE)
 
 
-## Introduction & Functions
-  - AWS Simple Notification Service (SNS)
-    - Use lambda functions to perform cost-alert
-    - Attach policies and roles
-    - Monitoring using CloudWatch metrics
+## AWS Simple Notification Service (SNS)
 
+    - The handler function is written in **Go-lang**
+
+### Use lambda functions to perform cost-alert
+      - Set phonenumbers environment variable
+      - Attach AWS Lambda roles and policies
+
+### Monitoring using CloudWatch metrics
+      - Set Cron expression for daily sms update
