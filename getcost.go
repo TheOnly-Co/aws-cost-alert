@@ -15,7 +15,7 @@ func getCost() (string, error) {
 	}
 	svc := costexplorer.New(sess)
 	result, err := svc.GetCostAndUsage(&costexplorer.GetCostAndUsageInput{
-		Metrics:     []*string{aws.String("UnblendedCost")},
+		Metrics: []*string{aws.String("UnblendedCost")},
 		Granularity: aws.String("DAILY"),
 		TimePeriod: &costexplorer.DateInterval{
 			Start: aws.String(fmt.Sprintf(time.Now().AddDate(0, 0, -1).UTC().Format("2006-01-02"))),
