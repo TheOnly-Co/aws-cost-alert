@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+
 func getCost() (string, error) {
 	sess, err := session.NewSession(nil)
 	if err != nil {
