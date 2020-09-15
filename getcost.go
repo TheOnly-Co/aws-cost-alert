@@ -20,7 +20,7 @@ func getCost() (string, error) {
 		Granularity: aws.String("DAILY"),
 		TimePeriod: &costexplorer.DateInterval{
 			Start: aws.String(fmt.Sprintf(time.Now().AddDate(0, 0, -1).UTC().Format("2006-01-02"))),
-			End:   aws.String(fmt.Sprintf(time.Now().UTC().Format("2006-01-02"))),
+			End: aws.String(fmt.Sprintf(time.Now().UTC().Format("2006-01-02"))),
 		},
 	})
 	if err != nil {
